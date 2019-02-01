@@ -1,0 +1,1270 @@
+
+<!-- saved from url=(0061)https://lms.valuelabs.com/app/Reports/AttendanceDetailsReport -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    #rptMainDiv {
+        margin-right: 0px;
+        margin-left: 0px;
+        font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+        color: #000000;
+        line-height: 1.42857143;
+        /*width: 1500px;*/
+    }
+
+    table {
+        /*width: 98%;*/
+        /*max-width: 100%;*/
+        margin-bottom: 20px;
+        font-size: 13px;
+        border-collapse: collapse;
+        background-color: transparent;
+        border-spacing: 0;
+        box-sizing: border-box;
+        border-top: 0.5px solid #ddd;
+        border-bottom: 0.5px solid #ddd;
+        table-layout: fixed;
+    }
+
+        table > thead > tr > th {
+            line-height: 1.42857143;
+            vertical-align: bottom;
+            border-bottom: 1px solid #999;
+            padding: 4px;
+            border-top: 0;
+            text-align: left;
+            font-weight: bold;
+            border-right: 0.5px solid #ddd;
+            border-left: 0.5px solid #ddd;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+
+        table > tbody > tr > td {
+            padding: 5px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            border-top: 0.5px solid #ddd;
+            border-right: 0.5px solid #ddd;
+            border-left: 0.5px solid #ddd;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    .HeadingDiv {
+        margin-top: 0px;
+        border-bottom: 2px solid #555;
+        /*border-bottom-width: 100%;*/
+        vertical-align: bottom;
+        width: 100%;
+        display:inline-block;
+    }
+
+    #rptContentDiv {
+        padding: 10px;
+        margin-left: -13px;
+    }
+
+    .DateTd {
+        text-align: left;
+        width: 157px;
+    }
+
+    .LogoTd {
+        text-align: center;
+        width: 132px;
+    }
+
+    .spnDate {
+        font-size: 12px;
+    }
+
+    .HeadingDiv table {
+        margin-bottom: 0px;
+        border-top: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    }
+
+        .HeadingDiv table > tbody > tr > td {
+            padding: 0px;
+            border-top: 0px;
+            line-height: none;
+            vertical-align: top;
+            border-right: none;
+            border-left: none;
+        }
+    .HeadingDiv .divOrgLogo {
+        width:20%;
+        display:inline-block;
+        float:left;
+        margin-bottom: 10px;
+    }
+    .HeadingDiv .divDate {
+           width:20%;
+           float:right;
+           margin-bottom: 10px;
+    }
+    .HeadingDiv .divAddr {
+         width:60%;
+        display:inline-block;
+         float:left;
+         margin-bottom: 10px;
+    }
+</style>
+
+</head><body><div id="rptMainDiv" style="width:1027px">
+
+    <div id="rptHeadingDiv" class="HeadingDiv">
+        <table style="width:1027px;">
+            <tbody><tr>
+                <td class="LogoTd">
+                    <img id="OrgLogo" src="./AttendanceDetailsReport_files/a2d0f6c3-bd88-40ef-a74b-e6ef6dfe9bc0.jpg" class="LogoImage" style="width:128px; padding-top:26px;">
+                </td>
+                <td style="text-align: center;">
+                    <h2 style="margin-bottom: 0px;">ValueLabs</h2>
+                    <h5 style="margin-top: 2px; margin-bottom: 0px;">Plot # 41, Hitech City, Phase II, Madhapur</h5>
+                    <h5 style="margin-top: 2px; margin-bottom: 2px;">Hyderabad, Telangana, India - 500081</h5>
+                    <span style="font-size: 17px;">Attendance Details Report</span>
+                        <br>
+                        <span style="font-size: 12px;font-weight:800">From </span>
+                        <span style="font-size: 12px;">03-Jan-19</span><span style="font-size: 12px;font-weight:800">&nbsp;To&nbsp;</span>
+                        <span style="font-size: 12px;">01-Feb-19</span>
+
+
+
+                </td>
+               
+                <td class="DateTd"><span class="spnDate">
+                         Print Date : <br>01-Feb-2019 4:05 PM
+                                   </span><br>
+                    <br>
+
+                        <span class="">Record Count : 30</span>
+                </td>
+               
+            </tr>
+        </tbody></table>
+        <br>
+
+   
+        
+    </div>
+    
+    <div id="rptContentDiv" style="width:1027px">
+
+        <table id="rptTable" style="width:1027px">
+            <thead>
+                <tr>
+                                            <th style="width:32px;text-align:right;">Sr No</th>
+                        <th style="width:65px;text-align:left;">Employee Code</th>
+                        <th style="width:100px;text-align:left;">Employee Name</th>
+                        <th style="width:80px;text-align:left;">Department</th>
+                        <th style="width:60px;text-align:left;">Category</th>
+                        <th style="width:80px;text-align:left;">Shift Date</th>
+                        <th style="width:60px;text-align:left;">Shift</th>
+                        <th style="width:40px;text-align:center;">Status</th>
+                        <th style="width:70px;text-align:right;">In Time</th>
+                        <th style="width:70px;text-align:right;">Out Time</th>
+                        <th style="width:55px;text-align:right;">Man Hours</th>
+                        <th style="width:55px;text-align:right;">Net Man Hours</th>
+                        <th style="width:30px;text-align:right;">Late By</th>
+                        <th style="width:30px;text-align:right;">Early By</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+1                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+03-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+A                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+2                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+04-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+10:33 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:21 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:48:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+4:37:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+3                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+05-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+4                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+06-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+5                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+07-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:39 AM                            </td>
+                            <td style="text-align:right; width:70px">
+6:09 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:30:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:13:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+6                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+08-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:31 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:40 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:09:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:19:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+7                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+09-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+10:52 AM                            </td>
+                            <td style="text-align:right; width:70px">
+6:00 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:08:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+2:21:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+8                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+10-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+10:39 AM                            </td>
+                            <td style="text-align:right; width:70px">
+6:04 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:25:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+2:57:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+9                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+11-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:14 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:22 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:08:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:56:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+10                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+12-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+11                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+13-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+12                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+14-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+A                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+13                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+15-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+H                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+14                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+16-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:44 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:55 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:11:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+4:01:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+15                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+17-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:21 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:38 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:17:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:00:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+16                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+18-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:14 AM                            </td>
+                            <td style="text-align:right; width:70px">
+6:08 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:54:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:55:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+17                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+19-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+18                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+20-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+19                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+21-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:08 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:14 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:06:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:21:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+20                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+22-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:00 AM                            </td>
+                            <td style="text-align:right; width:70px">
+6:25 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+9:25:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:11:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+21                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+23-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:07 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:33 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:26:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:43:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+22                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+24-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:02 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:18 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:16:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:26:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+23                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+25-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:14 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:22 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:08:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:59:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+24                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+26-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+25                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+27-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+WO                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+26                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+28-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:54 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:39 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:45:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+10:52:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+27                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+29-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:39 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:54 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:15:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+6:30:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+28                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+30-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+9:41 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:42 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+8:01:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:45:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+29                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+31-Jan-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+P                            </td>
+                            <td style="text-align:right; width:70px">
+10:27 AM                            </td>
+                            <td style="text-align:right; width:70px">
+5:48 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+7:21:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+5:16:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+30                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;1215503099                            </td>
+                            <td style="text-align:left;width:100px">
+Saketh Bezawada                            </td>
+                            <td style="text-align:left;width:80px">
+SD                            </td>
+                            <td style="text-align:left;width:60px">
+Intern                            </td>
+                            <td style="text-align:left;width:80px">
+
+01-Feb-19                            </td>
+                            <td style="text-align:left;width:60px">
+General                            </td>
+                            <td style="text-align:center;width:40px">
+HD                            </td>
+                            <td style="text-align:right; width:70px">
+10:03 AM                            </td>
+                            <td style="text-align:right; width:70px">
+12:49 PM                            </td>
+                            <td style="text-align:right;width:55px">
+
+2:46:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+2:29:00                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                            <td style="text-align:right;width:30px">
+                            </td>
+                    
+                
+                    </tr>
+                    <tr>
+                            <td style="text-align:right;width:32px">
+                            </td>
+                            <td style="text-align:left;width:65px">
+                                    &nbsp;                            </td>
+                            <td style="text-align:left;width:100px">
+                            </td>
+                            <td style="text-align:left;width:80px">
+                            </td>
+                            <td style="text-align:left;width:60px">
+                            </td>
+                            <td style="text-align:left;width:80px">
+
+                            </td>
+                            <td style="text-align:left;width:60px">
+                            </td>
+                            <td style="text-align:center;width:40px">
+Total                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right; width:70px">
+                            </td>
+                            <td style="text-align:right;width:55px">
+
+147:59:00                            </td>
+                            <td style="text-align:right;width:55px">
+
+107:51:00                            </td>
+                            <td style="text-align:right;width:30px">
+0                            </td>
+                            <td style="text-align:right;width:30px">
+0                            </td>
+                    
+                
+                    </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body></html>
